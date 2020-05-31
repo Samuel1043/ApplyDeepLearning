@@ -8,12 +8,12 @@ python3.7 seq2seq_train.py
 
 
 # plot relative location
-# require valid.pkl and valid.json to plot the result
-# it wiil calculate,print rouge-score and plt the relative location plot on the valid data
+1. require valid.pkl and valid.json to plot the result
+2. it wiil calculate,print rouge-score and plt the relative location plot on the valid data
 python3.7 seq_tag_val.py
 
 #plot attention plot
-#using the function in drawattn.py to plot attn plot
+using the function in drawattn.py to plot attn plot
 
 
 
