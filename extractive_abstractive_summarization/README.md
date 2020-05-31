@@ -12,7 +12,7 @@ python3.7 seq2seq_train.py
 2. it wiil calculate,print rouge-score and plt the relative location plot on the valid data
 python3.7 seq_tag_val.py
 
-#plot attention plot
+# plot attention plot
 using the function in drawattn.py to plot attn plot
 
 
