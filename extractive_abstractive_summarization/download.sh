@@ -4,3 +4,7 @@ mv data/model_decoder7.pth datasets/seq2seq/state_dict/
 mv data/model_encoder7.pth datasets/seq2seq/state_dict/
 mv data/model_decoder13.pth datasets/seq2seq/state_dict_attn/
 mv data/model_encoder13.pth datasets/seq2seq/state_dict_attn/
+#cd data
+gdrive download 1L_ayPqKlm6KmimjTHvheLQgm2EZfajh4 --recursive
+mv release/* data/
+rm -r release

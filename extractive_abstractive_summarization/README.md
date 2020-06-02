@@ -1,19 +1,43 @@
-# Training  model
-require train,test,valid,embedding pickle in current directory to run also needed revise train,valid,test data
-1. it will print the loss and rouge_score every epoch both for train data and valid data
-2. t will save state_dict if rouge-1 score for current epoch is better than all previous rouge-1 score
-3. it will write a file call loss_train_adl_64_LSTMHID_1.txt to store the training result
-python3.7 seq_tag_train.py
+# extractive_abstractive_summarization
+* [Homework 1 Slide](https://docs.google.com/presentation/d/1omvZRbcbpo1gQ2hlktPV9gZzuAfEHcsJa18IoytgQjk/edit#slide=id.g8130877143_0_0)
+* [Data](https://drive.google.com/drive/folders/1L_ayPqKlm6KmimjTHvheLQgm2EZfajh4)
+* [pretrainData](https://drive.google.com/drive/folders/1xIU1EoUf0P5z0tRmcVH5zz7APwFZ4BWe)
+
+## 0. Requirements
+```
+torch
+tqdm
+spacy
+rouge_score
+
+gdrive
+```
+## 1. download Data
+```
+sh download.sh
+```
+## 2. Training and Prediction
+```
+python3 seq_tag_train.py 
 python3.7 seq2seq_train.py
+sh  extractive.sh /path/to/test.jsonl /path/to/output/predict.jsonl
+sh  attention.sh /path/to/test.jsonl /path/to/output/predict.jsonl
+sh  seq2seq.sh  /path/to/test.jsonl /path/to/output/predict.jsonl
+```
+
+## 3. Results
+
+| Method | Rouge-1 | Rouge-2 | Rouge-L | 
+| --- | --------- | ------ | ------- | ---------- | ---- | ----------- | ---------- |
+| extractive      | 0.1658 | 0.0256 |0.1145            |
+| seq2seq      | 0.208 |  0.0464 | 0.1666 |
+| seq2seq_attention      | 0.248         | 0.8931 | 0.2142  |
+
+### attention plot
+
+<img src='./extractive_abstractive_summarization/result/attn_plot.PNG'>
 
 
-# plot relative location
-1. require valid.pkl and valid.json to plot the result
-2. it wiil calculate,print rouge-score and plt the relative location plot on the valid data
-python3.7 seq_tag_val.py
-
-# plot attention plot
-using the function in drawattn.py to plot attn plot
 
 
 
