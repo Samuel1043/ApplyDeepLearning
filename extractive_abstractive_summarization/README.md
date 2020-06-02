@@ -28,14 +28,14 @@ sh  seq2seq.sh  /path/to/test.jsonl /path/to/output/predict.jsonl
 ## 3. Results
 
 | Method | Rouge-1 | Rouge-2 | Rouge-L | 
-| --- | --------- | ------ | ------- | ---------- | ---- | ----------- | ---------- |
+| --- | --------- | ------ | ------- | 
 | extractive      | 0.1658 | 0.0256 |0.1145            |
 | seq2seq      | 0.208 |  0.0464 | 0.1666 |
 | seq2seq_attention      | 0.248         | 0.8931 | 0.2142  |
 
 ### attention plot
 
-<img src='./extractive_abstractive_summarization/result/attn_plot.PNG'>
+<img src='./result/attn_plot.PNG'>
 
 
 
