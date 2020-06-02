@@ -35,7 +35,7 @@ sh  seq2seq.sh  /path/to/test.jsonl /path/to/output/predict.jsonl
 
 ### attention plot
 
-<img src='./result/attn_plot.PNG'>
+<img src='./result/attn_plot.PNG' style="width:200px;"> 
 
 
 
