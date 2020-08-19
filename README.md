@@ -1,4 +1,4 @@
-# Deep_Learning_Text
+# ApplyDeepLearning
 
 Applied Deep Learning (2020 Spring) @ NTU
 
