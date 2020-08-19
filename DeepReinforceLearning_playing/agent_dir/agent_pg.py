@@ -37,7 +37,7 @@ class AgentPG(Agent):
         self.eps=1e-8
 
         # training hyperparameters
-        self.num_episodes = 100000 # total training episodes (actually too large...)
+        self.num_episodes = 300 # total training episodes (actually too large...)
         self.display_freq = 10 # frequency to display training progress
 
         # optimizer
@@ -139,4 +139,6 @@ class AgentPG(Agent):
                        (epoch, self.num_episodes, avg_reward))
                 self.save(self.save_pth+'.cpt')
                 break
+            if epoch==self.num_episodes-1:
+                self.save(self.save_pth+'.cpt')
         f.close()
