@@ -5,8 +5,13 @@
 
 |training episodes |250 | 440 | 600|
 | --- | --------- | ------ | ------- | 
-| GIF|<img src="./video/dqn250/combine.gif" width="600"> |<img src="video/dqn440/combine.gif" width="600"> | <img src="./video/dqn600/combine.gif" width="600">|
+| GIF|<img src="./video/dqn250/combine.gif" width="500"> |<img src="video/dqn440/combine.gif" width="500"> | <img src="./video/dqn600/combine.gif" width="500">|
 ## LunarLander-v2
+* policy gradient
+|training episodes |100 | 300 | 600|
+| --- | --------- | ------ | ------- | 
+| GIF|<img src="./video/pgepisode100/combine.gif" width="500"> |<img src="video/pgepisode300/combine.gif" width="500"> | <img src="./video/pgepisode600/combine.gif" width="500">|
+
 
 # training 
 ## dqn (1000000 steps)
