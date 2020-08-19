@@ -1,5 +1,13 @@
 # demo
 
+## MsPacmanNoFrameskip-v0
+* deep Q learning
+
+|training episodes |250 | 440 | 600|
+| --- | --------- | ------ | ------- | 
+| gif|![](./video/dqn250/combine.gif) |![](./video/dqn440/combine.gif) | ![](./video/dqn600/combine.gif)|
+
+## LunarLander-v2
 
 # training 
 ## dqn (1000000 steps)
