@@ -5,8 +5,7 @@
 
 |training episodes |250 | 440 | 600|
 | --- | --------- | ------ | ------- | 
-| gif|![](./video/dqn250/combine.gif) |![](./video/dqn440/combine.gif) | ![](./video/dqn600/combine.gif)|
-
+| GIF|<img src="./video/dqn250/combine.gif" width="600"> |<img src="video/dqn440/combine.gif" width="600"> | <img src="./video/dqn600/combine.gif" width="600">|
 ## LunarLander-v2
 
 # training 
